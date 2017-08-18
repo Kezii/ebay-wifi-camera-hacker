@@ -1,0 +1,39 @@
+#! /bin/sh
+
+#ifconfig eth0 192.168.1.17
+
+echo "mount all file system..."
+/bin/mount -av
+
+runlevel=S
+prevlevel=N
+umask 022
+export runlevel prevlevel
+
+mkdir /dev/pts
+mount -t devpts devpts /dev/pts
+
+echo "starting mdev..."
+/bin/echo /sbin/mdev > /proc/sys/kernel/hotplug
+mdev -s
+
+# mount -t jffs2 -rw /dev/mtdblock0 /etc
+ln -sf /proc/mounts /etc/mtab
+
+echo "**************************"
+echo "    Love Linux ! ! ! "
+echo "**************************"
+
+/bin/hostname -F /etc/sysconfig/HOSTNAME
+
+#local service
+#/etc/init.d/rc.local
+insmod /root/otg-hs.ko
+insmod /root/8188eu.ko
+#insmod /root/8192cu.ko
+#insmod /root/cxgpio.ko
+#mount /dev/mmcblock0p1 /mnt
+#cd /mnt
+#./recorder -w 320 -h 240 -t 10 -p /mnt
+grep -n "download=1" /proc/cmdline && /root/producer.sh
+/test/update.exe&

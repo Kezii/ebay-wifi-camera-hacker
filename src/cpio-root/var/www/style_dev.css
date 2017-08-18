@@ -1,0 +1,40 @@
+.mesWindow{border:0px;background-image:url(images/common_popu_panel_background.png);background-repeat : repeat;}
+.mesWindowTop{border-bottom:#eee 1px solid;margin-left:4px;padding:3px;font-weight:bold;text-align:left;font-size:12pt;}
+.mesWindowContent{padding:200px 30px 14px 30px;}
+.mesWindow.close{height:15px;width:28px;border:none;cursor:pointer;text-decoration:underline;background:#fff}
+.txt26{font-size:26px;color:#000000;font-family: Droid,Arial;}
+.txt20{font-size:20px;color:#000000;font-family: Droid,Arial;}
+.btn{font-size:26px;color:#4c4c4c;font-family: Droid,Arial;max-width:480px;border: 0px none ; background: transparent url(images/button/common_panel_rest.png) repeat scroll 0% 50%;  width: 454px;height: 50px; }
+.btntext{font-size:26px;color:#FFFFFF;font-family: Droid,Arial;max-width:480px;border: 0px none ; background: transparent url(images/button/common_button_rest.png) repeat scroll 0% 50%;  width: 224px;height: 74px; }
+.inputtxt{font-size:26px;padding:15px 0px 0px 15px; border: 0px none ; background: transparent url(images/common_input_rest.png) repeat scroll 0%; width: 442px; font-family: Droid,Arial; height: 40px;color:#4c4c4c;}
+.pulldown{padding:3px 0px 0px 15px;font-size: 24px;text-align:left;border: 0px none ; background: transparent url(images/button/common_button_pulldown.png) repeat scroll 0% 50%; width: 460px; font-family: Droid,Arial; height: 49px; color: rgb(86, 86, 86);}
+.pulldown_{padding:5px 0px 0px 15px;font-size: 24px;text-align:left;border: 0px none ; background: transparent url(images/button/common_button_pulldown.png) repeat scroll 0% 50%; width: 445px; font-family: Droid,Arial; height: 44px; color: rgb(86, 86, 86);}
+.header_top{padding:1px 0px 6px 9px;font-size:20px;font-family: Droid,Arial;max-width:480px;width:480px; height: 32px; background-image:url('images/Background/common_header_topround.png');color: rgb(153, 153, 153);}
+.header_mid{padding:5px 0px 5px 8px;font-size:20px;font-family: Droid,Arial;max-width:480px;width: 480px; height: 49px; background-image:url('images/Background/common_divider.png');color: rgb(153, 153, 153);}
+.header_bottom{width: 480px; height: 31px; background-image:url('images/Background/common_footer_topround.png');}
+.title{max-width:480px; width:480px; height: 53px; background-image:url('images/common_header.png');font-size: 26px; color: rgb(255, 255, 255);text-align:center;}
+.botton{width: 480px; height: 90px; background-image:url('images/Background/common_footerbar.png');}
+.lang_drop{width: 420px;font-family: Droid,Arial;display:none;font-size:20px;}
+.lang_it{padding:26px 0px 0px 24px;width: 398px;height: 46px;font-family: Droid,Arial;display:block;font-size:20px;}
+
+.wifitxt{font-size:20px;color:#000000;font-family: Droid,Arial;padding:2px 0px 2px 13px;}
+.text20{font-size:20px;color:#000000;font-family: Droid,Arial;padding:0px 0px 0px 13px;}
+.comWinHeader{font-size:26px;color:#ffffff;font-family: Droid,Arial;padding:14px 0px 14px 81px; background: transparent url(images/pulldown_header.png) repeat scroll 0% 50%; width: 339px;height: 47px;}
+.comWinContent{font-size:26px;color:#000000;font-family: Droid,Arial;padding:0px 0px 0px 20px; background: transparent url(images/pulldown_content.png) repeat scroll 0% 50%; width: 400px;height: 72px;}
+.comWinContent_click{background: transparent url(images/pulldown_content_sel.png) repeat scroll 0% 50%; width: 400px;height: 44px;}
+.comWinBottom{font-size:26px;color:#ffffff;font-family: Droid,Arial; background: transparent url(images/pulldown_bottom.png) repeat scroll 0% 50%; width: 420px;height: 93px;}
+.MsgHeader{font-size:26px;color:#ffffff;font-family: Droid,Arial;padding:14px 0px 14px 81px; background: transparent url(images/popup/common_popup_header.png) repeat scroll 0% 50%; width: 339px;height: 47px;}
+.MsgContent{font-size:24px;color:#ffffff;font-family: Droid,Arial;padding:14px 14px 14px 20px; background: transparent url(images/popup/common_popup_middle.png) repeat scroll 0% 50%; width: 386px;height: 44px;}
+.divide420{background: transparent url(images/common_divder420.png) repeat scroll 0% 50%; width: 420px;height: 1px;}
+.list{font-size:26px;color:#4c4c4c;font-family: Droid,Arial;padding:14px 14px 14px 20px;width: 386px;height: 44px;background-color:#ffffff;}
+.list_sel{font-size:26px;color:#ffffff;font-family: Droid,Arial;padding:14px 14px 14px 20px;background: transparent url(images/common_horizontal_selected.png) repeat scroll 0% 50%; width: 386px;height: 44px;}
+.listBottom{background: transparent url(images/Background/common_select_label3.png) repeat scroll 0% 50%; width: 420px;height: 13px;}
+.substr{font-size:20px;font-family: Droid,Arial;color:#4d4d4d;}
+.substr_sel{font-size:20px;color:#ffffff;font-family: Droid,Arial;}
+.wlist{font-size:26px;color:#4c4c4c;font-family: Droid,Arial;padding:0px 14px 0px 20px;width: 386px;height: 72px;background-color:#ffffff;}
+.wlist_sel{font-size:26px;color:#ffffff;font-family: Droid,Arial;padding:0px 14px 0px 20px;height: 72px;background-color:#ffffff;background: transparent url(images/common_horizontal_selected.png) repeat scroll 0% 50%; width: 386px;}
+.p_pulldown{padding:3px 0px 0px 15px;font-size: 24px;text-align:left;border: 0px none ; background: transparent url(images/button/common_button_pulldown_p.png) repeat scroll 0% 50%; width: 400px; font-family: Droid,Arial; height: 43px; color: rgb(86, 86, 86);}
+.p_inputtxt{font-size:26px;padding:15px 0px 0px 15px; border: 0px none ; background: transparent url(images/common_input_rest_p.png) repeat scroll 0%; width: 385px; font-family: Droid,Arial; height: 34px;color:#4c4c4c;}
+.p_btntext{font-size:26px;color:#FFFFFF;font-family: Droid,Arial;max-width:420px;border: 0px none ; background: transparent url(images/button/common_button_rest_p.png) repeat scroll 0% 50%;  width: 196px;height: 65px;}
+
+.p_wifitxt{background-color:#ffffff;font-size:20px;color:#000000;font-family: Droid,Arial;padding:2px 0px 2px 13px;width:420px;}

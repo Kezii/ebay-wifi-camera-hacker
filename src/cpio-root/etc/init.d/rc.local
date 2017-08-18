@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#echo "local service: telnetd start,chaoxian test"
+
+#telnetd
+
+#echo "Samba start"
+#nmbd -D
+#smbd -D
+
+#ifconfig eth0 192.168.1.121 netmask 255.255.255.0 up
+#route add default gw 192.168.1.1
+#ifconfig eth0 up
+
+/root/insmod_37_usbwifi.sh
+/etc/init.d/boa_service.sh start
+#/root/wifi_connect -sf

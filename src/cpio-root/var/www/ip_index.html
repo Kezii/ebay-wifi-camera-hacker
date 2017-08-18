@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<script type="text/javascript">
+			var deviceTime="2012-10-24 10:07:32";
+		</script>
+		<script type="text/javascript" charset="utf-8" src="video.js"></script>
+	</head>
+	<body align="center">
+	<table border="0" width="960px" >
+		<tr>
+			<td style="height:500px;width:700px">
+				<object ID="ipcamera" CLASSID="clsid:A2841B04-BE85-4B8F-BC70-0593E4606177" height="400" width="600" codebase="IPcamera.CAB#version=1.0.0.1" hspace=0 vspace=0>
+				</object>
+			</td>
+			<td width="260px">
+				<input type="button" value="拍照" id="CAPTUREButton" name="CAPTUREButton" onclick="doCapture();" /><br/>
+				<input type="button" value="普通录像" id="NOR_RECORDButton" name="NOR_RECORDButton" onclick="doVideoRecord('NOR_RECORD',this);" /><br/>
+				<input type="button" value="循环录像" id="ROT_RECORDButton" name="ROT_RECORDButton" onclick="doVideoRecord('ROT_RECORD',this);" /></br/>
+				<input type="button" value="网络设置" onclick="window.location.href='Settings.html'"/>
+				<br /><br /><br />
+				<TABLE  BORDER="0" CELLPADDING="0" CELLSPACING="0" align="center">
+					<TR>
+						<td colspan="2">
+							<b>视频设置</b>
+							<br />
+							<hr />
+						</td>
+					</TR>
+					<TR>
+						<td width="148" height="28">
+								<div class="text14">分辨率</div>
+						</Td>
+						<td height="28">
+							<select id="RESOLUTION" name="RESOLUTION" onchange="doChangeVideoParam(this)">
+								<option value="VGA">VGA</option>
+								<option value="QVGA">QVGA</option>
+								<option value="QQVGA">QQVGA</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td height="32">
+							<div class="text14">时间戳</div>
+						</Td>
+						<td height="32">
+							<select id="TIMESTAMP" name="TIMESTAMP" onchange="doChangeVideoParam(this)">
+								<option value="1">打开</option>
+								<option value="0">关闭</option>
+							</select>
+						</TD>
+					</TR>
+					<TR>
+						<td height="32">
+							<div class="text14">音频采集</div>
+						</TD>
+						<td height="32">
+							<select id="VOICE" name="VOICE" onchange="doChangeVideoParam(this)">
+								<option value="1">打开</option>
+								<option value="0">关闭</option>
+							</select>
+						</TD>
+					</TR>
+					
+					<TR>
+						<td height="32">
+								<div class="text14">录相时间</div>
+						</TD>
+						<td height="32">
+							<select id="REC_TIME" name="REC_TIME" onchange="doChangeVideoParam(this)">
+								<option value="2">2分钟</option>
+								<option value="5">5分钟</option>
+								<option value="10">10分钟</option>
+								<option value="15">15分钟</option>
+								<option value="30">30分钟</option>
+							</select>
+						</TD>
+					</TR>
+					<TR>
+						<td height="32">
+								<div class="text14">亮度</div>
+						</TD>
+						<td height="32">
+							<select id="BRIGHTNESS" name="BRIGHTNESS" onchange="doChangeVideoParam(this)">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+						</TD>
+					</TR>
+					<TR>
+						<td height="32">
+								<div class="text14">色彩度</div>
+						</TD>
+						<td height="32">
+							<select id="HUE" name="HUE" onchange="doChangeVideoParam(this)">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</TD>
+					</TR>
+					<TR>
+						<td height="32">
+								<div class="text14">对比度</div>
+						</td>
+						<td height="32">
+							<select id="CONTRAST" name="CONTRAST" onchange="doChangeVideoParam(this)" >
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+						</TD>
+					</TR>
+					<TR>
+						<td colspan="2" height="34">
+							
+						</TD>
+					</TR>
+					<TR>
+						<td colspan="2" height="34">
+							<b>系统设置</b>
+							<br />
+							<hr />
+						</TD>
+					</TR>
+					<TR>
+						<td height="28">
+							<div class="text14">当前系统时间:</div>
+						</TD>
+						<td height="28">
+							<input type="text" name="deviceTime" id="deviceTime" disable />
+						</TD>
+					</TR>
+					<TR>
+						<td height="80">
+							<div class="text14">手工设置时间:</div>
+						</TD>
+						<td>
+							<input type="text" name="adjustTime" id="adjustTime" />
+							<input type="button" value="保存设置" onclick="saveTime();" />
+						</TD>
+					</TR>
+					<TR>
+						<td>
+							<div class="text14">与计算机同步:</div>
+						</td>
+						<td height="28">
+							<input type="button" onclick="saveComputerTime()" value="同步" />
+						</TD>
+					</TR>
+				</table>
+				
+			</td>
+		</tr>
+	</table>
+	<input type="hidden" name="NOR_RECORDStatus" id="NOR_RECORDStatus" value="0" />
+	<input type="hidden" name="ROT_RECORDStatus" id="ROT_RECORDStatus" value="0" />
+	<script type="text/JavaScript">
+		setInterval("showTime()",1000);
+		var ip = "IP=192.168.1.1";
+		setVideoParamValue("IP="+ip);
+	</script>
+	</body>
+</html>
