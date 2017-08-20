@@ -28,8 +28,10 @@ cat __dentro_gzip | gzip --best > __gzippato
 
 echo "Creo la rom finale"
 
-cat src/davanti  __gzippato src/dietro_gzip > nuovo_blob
+cat src/davanti  __gzippato src/dietro_gzip > __firmware
 
 echo "Metto il padding giusto"
 
-dd if=/dev/null of=nuovo_blob bs=1 count=0 seek=8388608 
+#dd if=0xff.blob of=nuovo_blob bs=1 count=0 seek=8388608 
+cp src/0xff.blob nuovo_blob
+dd if=__firmware of=nuovo_blob conv=notrunc
